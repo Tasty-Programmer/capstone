@@ -1,29 +1,35 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\kimco\.gradle\caches\transforms-3\8c8bd08bd5ab439882315c15d3205b6b\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\kimco\.gradle\caches\transforms-3\61b09c254559981a9a7bec3250cb1b37\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\kimco\.gradle\caches\transforms-3\f791586eb8e3cddcf33fb36842d7675a\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\fa34d802f5734ed21e2fff1e25ee6f90\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\kimco\.gradle\caches\transforms-3\7272fe459d39c2d605bbecfb716654ab\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\kimco\.gradle\caches\transforms-3\b1dd8ac22a711b46e3bccf0575715877\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\kimco\.gradle\caches\transforms-3\54c6a591eb24e7fe68cbbb7a0d13f0d4\transformed\appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\205bb6c0d9609f43e6c79000d5d2b6d9\transformed\emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\kimco\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\d1e669fb14e168f243d9c08824d90b41\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\463b7469186c3f4b2f346265d95a7e42\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.transition:transition:1.2.0] C:\Users\kimco\.gradle\caches\transforms-3\021b0b14525b7a5cfb20cf681b0bcfb1\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\e5eab7523fa294709cfed9955605f8ff\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\7f04697b6371bd88d7088940d0625bf3\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4ff7b89a1fb1aea3a45b1663b12515c4\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c618c20ac0f0c831cf75a2869e1273aa\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\21b52207a6518d44b5d53bf208d72f33\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5b6592e71f4a3a4c12eb9f17f8802d4e\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.7.0] C:\Users\kimco\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\bd4596c4e03a42881733f45db8a548c5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\kimco\.gradle\caches\transforms-3\4fb4e4b8847d07919befcb8c05b76718\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
@@ -38,32 +44,32 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\kimco\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\kimco\.gradle\caches\transforms-3\03d84f79ddc5d095549aff719b894525\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\51b9a94edd9e7fc78556270fab7a5a6c\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\kimco\.gradle\caches\transforms-3\43849a663b47b5e3a36a05a548a0e4d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\e75a0458eb72599836852de240cf4303\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\9f24011717b021bac9ee09874fd0df37\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\6abfac59d263b6c8870828beb848f440\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\a9e9e56cd500525808c19a605e367b6a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:4:5-32
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:6:5-25:19
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:6:5-29:19
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\kimco\.gradle\caches\transforms-3\8c8bd08bd5ab439882315c15d3205b6b\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.5.0] C:\Users\kimco\.gradle\caches\transforms-3\8c8bd08bd5ab439882315c15d3205b6b\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\kimco\.gradle\caches\transforms-3\61b09c254559981a9a7bec3250cb1b37\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
@@ -92,30 +98,36 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\kimco\.gradle\cach
 		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
 		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:12:9-45
+activity#com.obyte.alcohol.Bottombar
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:13:9-15:40
+	android:exported
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:14:13-38
 activity#com.obyte.alcohol.MainActivity
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:13:9-16:20
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:16:9-18:38
 	android:exported
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:15:13-36
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:17:13-41
 activity#com.obyte.alcohol.TitleActivity
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:17:9-24:20
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:19:9-28:20
 	android:exported
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:19:13-36
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:21:13-36
 	android:theme
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:18:13-47
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:22:13-47
 	android:name
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:17:19-48
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:20:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:20:13-23:29
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from D:\capst\Android\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml
@@ -126,6 +138,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\kimco\.g
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\kimco\.gradle\caches\transforms-3\61b09c254559981a9a7bec3250cb1b37\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\kimco\.gradle\caches\transforms-3\f791586eb8e3cddcf33fb36842d7675a\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\kimco\.gradle\caches\transforms-3\f791586eb8e3cddcf33fb36842d7675a\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c4fb733a1e2f1e08b6cec4c0d00dedc6\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\fa34d802f5734ed21e2fff1e25ee6f90\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\fa34d802f5734ed21e2fff1e25ee6f90\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\kimco\.gradle\caches\transforms-3\7272fe459d39c2d605bbecfb716654ab\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -138,6 +152,8 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\kimco\.gradle\c
 MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\205bb6c0d9609f43e6c79000d5d2b6d9\transformed\emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\7ffe93d28f362b26c3d6e78553756333\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\kimco\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\kimco\.gradle\caches\transforms-3\c937dfc9b7f62a4de37b02df03362114\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\d1e669fb14e168f243d9c08824d90b41\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -150,16 +166,24 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kim
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\e5eab7523fa294709cfed9955605f8ff\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\7f04697b6371bd88d7088940d0625bf3\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\7f04697b6371bd88d7088940d0625bf3\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4ff7b89a1fb1aea3a45b1663b12515c4\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4ff7b89a1fb1aea3a45b1663b12515c4\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c618c20ac0f0c831cf75a2869e1273aa\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\c618c20ac0f0c831cf75a2869e1273aa\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5aed98e1a7bd35d26e6b7e123a4f58e5\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\4cfa2ef3764f868c4ac286f96c605047\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\21b52207a6518d44b5d53bf208d72f33\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\21b52207a6518d44b5d53bf208d72f33\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\a3a08577c2293b3274c094c4109c786c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\78a8bad557395e961dcafcf79f000333\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\cbded60deb9bdab86c8b4b61fe4b5086\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5b6592e71f4a3a4c12eb9f17f8802d4e\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\5b6592e71f4a3a4c12eb9f17f8802d4e\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.7.0] C:\Users\kimco\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.7.0] C:\Users\kimco\.gradle\caches\transforms-3\02483169c4c9e0ddffa88758188ac6f1\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\bd4596c4e03a42881733f45db8a548c5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -188,14 +212,14 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\kimco\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\51b9a94edd9e7fc78556270fab7a5a6c\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\kimco\.gradle\caches\transforms-3\43849a663b47b5e3a36a05a548a0e4d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\kimco\.gradle\caches\transforms-3\43849a663b47b5e3a36a05a548a0e4d6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\e75a0458eb72599836852de240cf4303\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\e75a0458eb72599836852de240cf4303\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\9f24011717b021bac9ee09874fd0df37\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\9f24011717b021bac9ee09874fd0df37\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\6abfac59d263b6c8870828beb848f440\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\6abfac59d263b6c8870828beb848f440\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\b3b09621cca747e5e8d01c73cf2136e9\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\a9e9e56cd500525808c19a605e367b6a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\kimco\.gradle\caches\transforms-3\a9e9e56cd500525808c19a605e367b6a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from D:\capst\Android\app\src\main\AndroidManifest.xml

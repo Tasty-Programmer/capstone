@@ -11,7 +11,7 @@
 9-->D:\capst\Android\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\capst\Android\app\src\main\AndroidManifest.xml:6:5-25:19
+11-->D:\capst\Android\app\src\main\AndroidManifest.xml:6:5-29:19
 12        android:allowBackup="true"
 12-->D:\capst\Android\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,53 +29,58 @@
 20        android:theme="@style/Theme.Alcohol" >
 20-->D:\capst\Android\app\src\main\AndroidManifest.xml:12:9-45
 21        <activity
-21-->D:\capst\Android\app\src\main\AndroidManifest.xml:13:9-16:20
-22            android:name="com.obyte.alcohol.MainActivity"
-22-->D:\capst\Android\app\src\main\AndroidManifest.xml:14:13-41
-23            android:exported="true" >
-23-->D:\capst\Android\app\src\main\AndroidManifest.xml:15:13-36
-24        </activity>
-25        <activity
-25-->D:\capst\Android\app\src\main\AndroidManifest.xml:17:9-24:20
-26            android:name="com.obyte.alcohol.TitleActivity"
-26-->D:\capst\Android\app\src\main\AndroidManifest.xml:17:19-48
-27            android:exported="true"
-27-->D:\capst\Android\app\src\main\AndroidManifest.xml:19:13-36
-28            android:theme="@style/SplashTheme" >
-28-->D:\capst\Android\app\src\main\AndroidManifest.xml:18:13-47
-29            <intent-filter>
-29-->D:\capst\Android\app\src\main\AndroidManifest.xml:20:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->D:\capst\Android\app\src\main\AndroidManifest.xml:21:17-69
-30-->D:\capst\Android\app\src\main\AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->D:\capst\Android\app\src\main\AndroidManifest.xml:22:17-77
-32-->D:\capst\Android\app\src\main\AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35
-36        <provider
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-37            android:name="androidx.startup.InitializationProvider"
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-38            android:authorities="com.obyte.alcohol.androidx-startup"
-38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-39            android:exported="false" >
-39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-40            <meta-data
-40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-41                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-42                android:value="androidx.startup" />
-42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-43            <meta-data
-43-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-44                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-44-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-45                android:value="androidx.startup" />
-45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-46        </provider>
-47    </application>
-48
-49</manifest>
+21-->D:\capst\Android\app\src\main\AndroidManifest.xml:13:9-15:40
+22            android:name="com.obyte.alcohol.Bottombar"
+22-->D:\capst\Android\app\src\main\AndroidManifest.xml:14:13-38
+23            android:exported="false" />
+23-->D:\capst\Android\app\src\main\AndroidManifest.xml:15:13-37
+24        <activity
+24-->D:\capst\Android\app\src\main\AndroidManifest.xml:16:9-18:38
+25            android:name="com.obyte.alcohol.MainActivity"
+25-->D:\capst\Android\app\src\main\AndroidManifest.xml:17:13-41
+26            android:exported="true" />
+26-->D:\capst\Android\app\src\main\AndroidManifest.xml:18:13-36
+27        <activity
+27-->D:\capst\Android\app\src\main\AndroidManifest.xml:19:9-28:20
+28            android:name="com.obyte.alcohol.TitleActivity"
+28-->D:\capst\Android\app\src\main\AndroidManifest.xml:20:13-42
+29            android:exported="true"
+29-->D:\capst\Android\app\src\main\AndroidManifest.xml:21:13-36
+30            android:theme="@style/SplashTheme" >
+30-->D:\capst\Android\app\src\main\AndroidManifest.xml:22:13-47
+31            <intent-filter>
+31-->D:\capst\Android\app\src\main\AndroidManifest.xml:23:13-27:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->D:\capst\Android\app\src\main\AndroidManifest.xml:24:17-69
+32-->D:\capst\Android\app\src\main\AndroidManifest.xml:24:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->D:\capst\Android\app\src\main\AndroidManifest.xml:26:17-77
+34-->D:\capst\Android\app\src\main\AndroidManifest.xml:26:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <provider
+38-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+39            android:name="androidx.startup.InitializationProvider"
+39-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+40            android:authorities="com.obyte.alcohol.androidx-startup"
+40-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+41            android:exported="false" >
+41-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+42            <meta-data
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+44                android:value="androidx.startup" />
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\kimco\.gradle\caches\transforms-3\278083bef5dd79cb476949a0d92ce592\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+45            <meta-data
+45-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+46-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+47                android:value="androidx.startup" />
+47-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\kimco\.gradle\caches\transforms-3\4d932a67b7be3c4366d55752ebd69384\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+48        </provider>
+49    </application>
+50
+51</manifest>

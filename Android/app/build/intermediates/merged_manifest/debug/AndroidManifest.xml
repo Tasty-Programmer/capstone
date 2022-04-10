@@ -19,9 +19,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.Alcohol" >
         <activity
+            android:name="com.obyte.alcohol.Bottombar"
+            android:exported="false" />
+        <activity
             android:name="com.obyte.alcohol.MainActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.obyte.alcohol.TitleActivity"
             android:exported="true"
