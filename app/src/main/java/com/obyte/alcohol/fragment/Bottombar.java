@@ -1,8 +1,10 @@
-package com.obyte.alcohol;
+package com.obyte.alcohol.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.obyte.alcohol.R;
 
 public class Bottombar extends AppCompatActivity {
 

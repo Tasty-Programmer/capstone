@@ -1,9 +1,13 @@
-package com.obyte.alcohol;
+package com.obyte.alcohol.splash;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.obyte.alcohol.MainActivity;
+import com.obyte.alcohol.R;
 
 public class TitleActivity extends AppCompatActivity {
 
@@ -16,11 +20,9 @@ public class TitleActivity extends AppCompatActivity {
     }
 
     private void moveMain(int sec) {
-        new Handler().postDelayed(new Runnable()
-        {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
