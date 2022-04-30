@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
 import com.obyte.alcohol.MainActivity;
 import com.obyte.alcohol.R;
 
@@ -16,17 +18,18 @@ public class TitleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_title);
 
-        moveMain(1);
-    }
+        ImageView gif_image = (ImageView) findViewById(R.id.gif_image);
+        Glide.with(this).load(R.drawable.splash).into(gif_image);
 
-    private void moveMain(int sec) {
-        new Handler().postDelayed(new Runnable() {
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 finish();
             }
-        }, 1000 * sec);
+        }, 3000);
+
     }
 }
