@@ -18,6 +18,9 @@
             android:name=".fragment.Bottombar"
             android:exported="false" />
         <activity
+            android:name=".fragment.MenuFragment"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"/>
         <activity
