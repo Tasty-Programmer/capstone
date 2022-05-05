@@ -12,7 +12,7 @@ public class DrinkData {
     @Expose
     private String level;
 
-    @SerializedName("용량")
+    @SerializedName("규격")
     @Expose
     private String volume;
 

@@ -12,43 +12,38 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.obyte.alcohol.Rest.DrinkData;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class ViewAdepter extends RecyclerView.Adapter {
-    private ArrayList<DrinkData> messageModalArrayList;
-    private Context context;
+public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder> {
+    private ArrayList<DrinkData> drinkDataArrayList;
 
-    public ViewAdepter(ArrayList<DrinkData> messageModalArrayList, Context context) {
-        super();
-        this.messageModalArrayList = messageModalArrayList;
-        this.context = context;
+
+    public ViewAdepter(ArrayList<DrinkData> drinkDataArrayList) {
+        this.drinkDataArrayList = drinkDataArrayList;
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ListItemHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.listitem, parent, false);
         return new ListItemHolder(view);
 
     }
 
-    //modal에 저장된 입력자를 판단하여 알맞은 메세지 박스에 표시
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        DrinkData modal = messageModalArrayList.get(position);
+    public void onBindViewHolder(@NonNull ListItemHolder holder, int position) {
+        DrinkData modal = drinkDataArrayList.get(position);
 
-        ((ListItemHolder) holder).tvName.setText(modal.getName());
-        ((ListItemHolder) holder).tvLevel.setText(modal.getLevel());
-        ((ListItemHolder) holder).tvVolume.setText(modal.getVolume());
-
+        holder.tvName.setText(modal.getName());
+        holder.tvLevel.setText("도수 : " + modal.getLevel());
+        holder.tvVolume.setText("규격 :" +modal.getVolume());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return drinkDataArrayList.size();
     }
 
-    private class ListItemHolder extends RecyclerView.ViewHolder {
+    protected class ListItemHolder extends RecyclerView.ViewHolder {
         TextView tvName, tvLevel, tvVolume;
 
         public ListItemHolder(@NonNull View view) {
