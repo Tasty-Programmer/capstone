@@ -1,4 +1,4 @@
-package com.obyte.alcohol.fragment;
+package com.obyte.alcohol.fragment.menu;
 
 import android.os.Bundle;
 
@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.google.gson.Gson;
 import com.obyte.alcohol.R;
 import com.obyte.alcohol.Rest.DrinkData;
 import com.obyte.alcohol.Rest.PageData;
@@ -41,7 +40,6 @@ public class MenuFragment extends Fragment {
     final static String BASE_URL = "https://api.odcloud.kr/api/";
     final static String SERVICE_KEY = "PiupwYl4E3qXUITudPuqSalNK8/yzD8jOUgFtMIZJkEB2CPsZaDBfae+UAU9MoNKBJLvaUxIlq5jY2WwzDmEeg==";
     final static int GRID_SPAN_COUNT = 2;
-
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 

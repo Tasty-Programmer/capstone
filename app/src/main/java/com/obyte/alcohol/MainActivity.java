@@ -8,10 +8,10 @@ import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-import com.obyte.alcohol.fragment.HomeFragment;
-import com.obyte.alcohol.fragment.MenuFragment;
-import com.obyte.alcohol.fragment.SearchFragment;
-import com.obyte.alcohol.fragment.ShopFragment;
+import com.obyte.alcohol.fragment.home.HomeFragment;
+import com.obyte.alcohol.fragment.menu.MenuFragment;
+import com.obyte.alcohol.fragment.search.SearchFragment;
+import com.obyte.alcohol.fragment.shop.ShopFragment;
 
 public class MainActivity extends AppCompatActivity {
     HomeFragment homeFragment;

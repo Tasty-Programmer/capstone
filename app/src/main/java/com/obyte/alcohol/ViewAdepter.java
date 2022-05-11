@@ -43,7 +43,8 @@ public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder
 
         String urlMin = "https://www.thesool.com/common/imageView.do?targetId=PR00000412&targetNm=PRODUCT";
         String urlMax = "https://www.thesool.com/common/imageView.do?targetId=PR00000434&targetNm=PRODUCT";
-        Glide.with(context).load(urlMax).into(holder.ivImage);
+        String urltest = "https://thesool.com/common/imageView.do?targetId=PR00000706&targetNm=PRODUCT";
+        Glide.with(context).load(urltest).into(holder.ivImage);
     }
 
     @Override

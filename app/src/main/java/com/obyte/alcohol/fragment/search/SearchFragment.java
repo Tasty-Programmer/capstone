@@ -1,11 +1,14 @@
-package com.obyte.alcohol.fragment;
+package com.obyte.alcohol.fragment.search;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+
 import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.obyte.alcohol.R;
 
 import android.webkit.WebChromeClient;
@@ -13,22 +16,23 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class ShopFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
     WebView mWebView;
     WebSettings mWebSettings;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup viewGroup =(ViewGroup) inflater.inflate(R.layout.fragment_shop,container,false);
+        ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_search, container, false);
         initWebView(viewGroup);
         return viewGroup;
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    public void initWebView(ViewGroup viewGroup){
-        mWebView = viewGroup.findViewById(R.id.webV_Shop);
-
+    public void initWebView(ViewGroup viewGroup) {
+        mWebView = viewGroup.findViewById(R.id.webV_Search);
         mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
+        mWebView.setWebChromeClient(new WebChromeClient());
+
         mWebSettings = mWebView.getSettings(); //세부 세팅 등록
         mWebSettings.setJavaScriptEnabled(true); // 웹페이지 자바스클비트 허용 여부
         mWebSettings.setSupportMultipleWindows(false); // 새창 띄우기 허용 여부
@@ -40,7 +44,8 @@ public class ShopFragment extends Fragment {
         mWebSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN); // 컨텐츠 사이즈 맞추기
         mWebSettings.setCacheMode(WebSettings.LOAD_NO_CACHE); // 브라우저 캐시 허용 여부
         mWebSettings.setDomStorageEnabled(true); // 로컬저장소 허용 여부
-        mWebView.loadUrl("http://www.naver.com"); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
+        mWebView.loadUrl("http://www.google.com"); // 웹뷰에 표시할 웹사이트 주소, 웹뷰 시작
 
     }
+
 }

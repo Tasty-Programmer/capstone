@@ -11,18 +11,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_main_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Alcohol"
+        android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
             android:name=".fragment.Bottombar"
             android:exported="false" />
         <activity
-            android:name=".fragment.MenuFragment"
+            android:name=".fragment.menu.MenuFragment"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".splash.TitleActivity"
             android:exported="true"

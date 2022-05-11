@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="10dp"
-    tools:context=".fragment.MenuFragment">
+    tools:context=".fragment.menu.MenuFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvLists"
