@@ -2,13 +2,10 @@ package com.obyte.alcohol.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.obyte.alcohol.R;
 
 import android.webkit.WebChromeClient;
@@ -22,17 +19,16 @@ public class SearchFragment extends Fragment {
     WebSettings mWebSettings;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.fragment_search, container, false);
+        ViewGroup viewGroup =(ViewGroup) inflater.inflate(R.layout.fragment_search,container,false);
         initWebView(viewGroup);
         return viewGroup;
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    public void initWebView(ViewGroup viewGroup) {
+    public void initWebView(ViewGroup viewGroup){
         mWebView = viewGroup.findViewById(R.id.webV_Search);
-        mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
-        mWebView.setWebChromeClient(new WebChromeClient());
 
+        mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
         mWebSettings = mWebView.getSettings(); //세부 세팅 등록
         mWebSettings.setJavaScriptEnabled(true); // 웹페이지 자바스클비트 허용 여부
         mWebSettings.setSupportMultipleWindows(false); // 새창 띄우기 허용 여부

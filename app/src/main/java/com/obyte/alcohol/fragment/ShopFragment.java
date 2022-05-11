@@ -29,7 +29,6 @@ public class ShopFragment extends Fragment {
         mWebView = viewGroup.findViewById(R.id.webV_Shop);
 
         mWebView.setWebViewClient(new WebViewClient()); // 클릭시 새창 안뜨게
-        mWebView.setWebChromeClient(new WebChromeClient());
         mWebSettings = mWebView.getSettings(); //세부 세팅 등록
         mWebSettings.setJavaScriptEnabled(true); // 웹페이지 자바스클비트 허용 여부
         mWebSettings.setSupportMultipleWindows(false); // 새창 띄우기 허용 여부
