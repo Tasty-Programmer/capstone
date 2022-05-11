@@ -49,13 +49,13 @@ public class MenuFragment extends Fragment {
         init(viewGroup);
 
         dataArrayList = new ArrayList<>();
-        viewAdepter = new ViewAdepter(dataArrayList);
+        viewAdepter = new ViewAdepter(dataArrayList, getContext());
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), GRID_SPAN_COUNT);
         rvLists.setLayoutManager(gridLayoutManager);
         rvLists.setAdapter(viewAdepter);
 
-        serverConnet();
+        serverConnect();
 
         return viewGroup;
     }
@@ -64,7 +64,7 @@ public class MenuFragment extends Fragment {
         rvLists = viewGroup.findViewById(R.id.rvLists);
     }
 
-    public void serverConnet(){
+    public void serverConnect(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
