@@ -4,42 +4,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/Home_MainHomePage"
-        android:src="@android:color/holo_blue_light"
-        android:layout_width="380sp"
-        android:layout_height="90sp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Game &amp; Play"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@+id/mainFrameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/mainFrameLayout"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-
+        android:id="@+id/mainFrameLayout"
         android:layout_width="380sp"
-        android:layout_height="300sp"
-        android:layout_marginTop="50dp"
+        android:layout_height="250sp"
+        app:layout_constraintBottom_toTopOf="@+id/Home_MainHomePage"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Home_MainHomePage">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/Home_ViewPager2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="10sp"
             android:clipChildren="false"
             android:clipToPadding="false" />
 
         <me.relex.circleindicator.CircleIndicator3
             android:id="@+id/indicator"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="bottom"/>
+            android:layout_height="48sp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp" />
 
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_maintextmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="15sp"
+        android:text="Alcohol Test"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Home_MainHomePage"
+        app:layout_constraintLeft_toLeftOf="@+id/Home_MainHomePage"
+        app:layout_constraintTop_toBottomOf="@+id/mainFrameLayout"
+        />
+
+
+    <ImageView
+        android:id="@+id/Home_MainHomePage"
+        android:layout_width="380sp"
+        android:layout_height="90sp"
+        android:layout_marginTop="5sp"
+        android:src="@drawable/alcoholtest"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_maintextmenu" />
+
+    <LinearLayout
+        android:id="@+id/Home_SupportHomePage"
+        android:layout_width="380sp"
+        android:layout_height="150sp"
+        android:layout_marginBottom="15sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Home_MainHomePage">
+
+        <TextView
+            android:id="@+id/tv_maintextsupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support &amp; Site"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Home_MainHomePage"
+            app:layout_constraintLeft_toLeftOf="@+id/Home_MainHomePage"
+            app:layout_constraintTop_toBottomOf="@+id/Home_SupportHomePage" />
+
+        <TextView
+            android:id="@+id/LinkedText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text=" - 더술 닷컴"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LinkedText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:text=" - 대림대"
+            android:textColor="@color/purple_200"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

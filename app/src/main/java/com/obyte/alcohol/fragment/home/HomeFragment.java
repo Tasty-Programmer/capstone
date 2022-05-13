@@ -1,14 +1,16 @@
 package com.obyte.alcohol.fragment.home;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.obyte.alcohol.R;
 
@@ -20,6 +22,7 @@ public class HomeFragment extends Fragment {
     private FragmentStateAdapter pagerAdapter;
     private int num_page = 3;
     private CircleIndicator3 mIndicator;
+    private TextView LinkedText1,LinkedText2;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedIn1stanceState) {
         super.onCreate(savedIn1stanceState);
@@ -46,8 +49,28 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        LinkedText1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://thesool.com/front/home/M000000000/index.do"));
+                startActivity(intent);
+
+            }
+        });
+
+        LinkedText2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.daelim.ac.kr/index.do"));
+                startActivity(intent);
+
+            }
+        });
+
         return viewGroup;
     }
+
+
 
     public void init(ViewGroup viewGroup) {
         //ViewPager2
@@ -61,6 +84,9 @@ public class HomeFragment extends Fragment {
         mIndicator.createIndicators(num_page,0);
         //ViewPager Setting
         mPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
+        LinkedText1 = viewGroup.findViewById(R.id.LinkedText1);
+        LinkedText2 = viewGroup.findViewById(R.id.LinkedText2);
+
     }
 
 
