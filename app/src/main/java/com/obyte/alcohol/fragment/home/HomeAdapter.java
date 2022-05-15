@@ -3,10 +3,12 @@ package com.obyte.alcohol.fragment.home;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
-
-import com.obyte.alcohol.fragment.home.fragment.*;
+import com.obyte.alcohol.fragment.home.fragment.game;
+import com.obyte.alcohol.fragment.home.fragment.mbti;
+import com.obyte.alcohol.fragment.home.fragment.naverdictionary;
 
 public class HomeAdapter extends FragmentStateAdapter {
+
     public int mCount;
     public HomeAdapter(HomeFragment fa, int count) {
         super(fa);

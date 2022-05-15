@@ -5,11 +5,10 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
-    <TextView
-        android:text="2"
+    <ImageView
+        android:id="@+id/home_fragment2"
         android:layout_width="400dp"
         android:layout_height="400dp"
-        android:textSize="50dp"
         android:gravity="center"
         android:textColor="#000000"
         android:background="#00FFB8"

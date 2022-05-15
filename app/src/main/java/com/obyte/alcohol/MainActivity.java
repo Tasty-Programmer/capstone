@@ -1,10 +1,10 @@
 package com.obyte.alcohol;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     MenuFragment menuFragment;
     SearchFragment searchFragment;
     ShopFragment shopFragment;
+
 
 
     @Override

@@ -29,15 +29,15 @@ public class HomeFragment extends Fragment {
         ViewGroup viewGroup =(ViewGroup) inflater.inflate(R.layout.fragment_home,container,false);
         init(viewGroup);
 
-
-
         mPager.setCurrentItem(1000);    //Start Point
         mPager.setOffscreenPageLimit(3);    //Fragments
 
         mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                 super.onPageScrolled(position, positionOffset, positionOffsetPixels);
+
                 if(positionOffsetPixels == 0){
                     mPager.setCurrentItem(position);
                 }
