@@ -17,9 +17,11 @@
 
     <FrameLayout
         android:id="@+id/mainFrameLayout"
-        android:layout_width="380sp"
+        android:layout_width="match_parent"
         android:layout_height="250sp"
         app:layout_constraintBottom_toTopOf="@+id/Home_MainHomePage"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -59,9 +61,11 @@
 
     <ImageView
         android:id="@+id/Home_MainHomePage"
-        android:layout_width="380sp"
+        android:layout_width="match_parent"
         android:layout_height="90sp"
         android:layout_marginTop="5sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
         android:src="@drawable/alcoholtest"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintLeft_toLeftOf="parent"
