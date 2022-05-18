@@ -8,7 +8,7 @@
     android:orientation="vertical">
     <ImageView
         android:id="@+id/home_fragment3"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
         android:gravity="center"
         android:textColor="#000000"
