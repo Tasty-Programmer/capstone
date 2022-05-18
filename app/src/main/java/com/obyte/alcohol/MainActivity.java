@@ -34,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
                                                   @Override
                                                   public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                                                       switch (item.getItemId()) {
-                                                          case R.id.first_tab:
+                                                          case R.id.Home_tab:
                                                               getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
                                                               return true;
-                                                          case R.id.second_tab:
+                                                          case R.id.Menu_tab:
                                                               getSupportFragmentManager().beginTransaction().replace(R.id.container, menuFragment).commit();
                                                               return true;
-                                                          case R.id.third_tab:
+                                                          case R.id.Search_tab:
                                                               getSupportFragmentManager().beginTransaction().replace(R.id.container, searchFragment).commit();
                                                               return true;
-                                                          case R.id.fourth_tab:
+                                                          case R.id.Shop_tab:
                                                               getSupportFragmentManager().beginTransaction().replace(R.id.container, shopFragment).commit();
                                                               return true;
                                                       }

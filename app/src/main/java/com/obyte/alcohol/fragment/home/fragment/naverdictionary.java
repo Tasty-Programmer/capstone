@@ -25,7 +25,7 @@ public class naverdictionary extends Fragment {
         fragment3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.daum.net"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://asummt.com"));
                 startActivity(intent);
             }
         });

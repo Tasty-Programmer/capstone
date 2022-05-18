@@ -3,27 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/first_tab"
+        android:id="@+id/Home_tab"
         android:enabled="true"
         android:icon="@drawable/home"
         android:title="home"
         app:showAsAction="always" />
     <item
-        android:id="@+id/second_tab"
+        android:id="@+id/Menu_tab"
         android:enabled="true"
         android:icon="@drawable/menu"
         android:title="menu"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/third_tab"
+        android:id="@+id/Search_tab"
         android:enabled="true"
         android:icon="@drawable/search"
         android:title="search"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/fourth_tab"
+        android:id="@+id/Shop_tab"
         android:enabled="true"
         android:icon="@drawable/shop"
         android:title="shop"

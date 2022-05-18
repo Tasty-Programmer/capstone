@@ -29,7 +29,7 @@ public class game extends Fragment {
         fragment1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://m.search.naver.com/search.naver?query=%EB%84%A4%EC%9D%B4%EB%B2%84+%EA%B0%84%EB%8B%A8%EA%B2%8C%EC%9E%84&where=m&sm=mtp_sly.hst&acr=1"));
                 startActivity(intent);
             }
         });

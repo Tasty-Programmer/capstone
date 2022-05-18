@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,7 +37,6 @@ public class MenuFragment extends Fragment {
     ArrayList<DrinkData> dataArrayList;
     ViewAdepter viewAdepter;
 
-
     final static String BASE_URL = "https://api.odcloud.kr/api/";
     final static String SERVICE_KEY = "PiupwYl4E3qXUITudPuqSalNK8/yzD8jOUgFtMIZJkEB2CPsZaDBfae+UAU9MoNKBJLvaUxIlq5jY2WwzDmEeg==";
     final static int GRID_SPAN_COUNT = 2;
@@ -57,6 +57,7 @@ public class MenuFragment extends Fragment {
 
         return viewGroup;
     }
+
 
     public void init(ViewGroup viewGroup) {
         rvLists = viewGroup.findViewById(R.id.rvLists);

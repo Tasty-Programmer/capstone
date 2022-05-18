@@ -27,7 +27,7 @@ public class mbti extends Fragment {
         fragment2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.naver.com"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://gocoder.net/tools/race/"));
                 startActivity(intent);
             }
         });

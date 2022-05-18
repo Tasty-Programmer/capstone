@@ -28,7 +28,7 @@ public class HomeFragment extends Fragment {
         super.onCreate(savedIn1stanceState);
         ViewGroup viewGroup =(ViewGroup) inflater.inflate(R.layout.fragment_home,container,false);
         init(viewGroup);
-
+        mPager.setSaveEnabled(false);
         mPager.setCurrentItem(1000);    //Start Point
         mPager.setOffscreenPageLimit(3);    //Fragments
 
