@@ -2,22 +2,23 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:Tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
-            android:text="Game &amp; Play"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@+id/mainFrameLayout"
-            app:layout_constraintTop_toBottomOf="@+id/mainFrameLayout"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:text="Game &amp; Play"-->
+<!--            android:textSize="25sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/mainFrameLayout"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mainFrameLayout"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
         <FrameLayout
             android:id="@+id/mainFrameLayout"
@@ -69,6 +70,7 @@
             android:layout_marginLeft="15sp"
             android:layout_marginTop="5sp"
             android:layout_marginRight="15sp"
+            android:adjustViewBounds="true"
             android:src="@drawable/alcoholtest"
             app:layout_constraintHorizontal_bias="0.516"
             app:layout_constraintLeft_toLeftOf="parent"

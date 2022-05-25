@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,7 @@ public class HomeFragment extends Fragment {
     private int num_page = 3;
     private CircleIndicator3 mIndicator;
     private TextView LinkedText1,LinkedText2;
+    private ImageView testalcohol;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedIn1stanceState) {
         super.onCreate(savedIn1stanceState);
@@ -46,6 +48,14 @@ public class HomeFragment extends Fragment {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 mIndicator.animatePageSelected(position%num_page);
+            }
+        });
+
+        testalcohol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://thesool.com/aiSommelier/main.html"));
+                startActivity(intent);
             }
         });
 
@@ -86,6 +96,7 @@ public class HomeFragment extends Fragment {
         mPager.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
         LinkedText1 = viewGroup.findViewById(R.id.LinkedText1);
         LinkedText2 = viewGroup.findViewById(R.id.LinkedText2);
+        testalcohol = viewGroup.findViewById(R.id.Home_MainHomePage);
 
     }
 

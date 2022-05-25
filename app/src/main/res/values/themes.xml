@@ -3,8 +3,8 @@
     <style name="Theme.Alcohol" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="windowNoTitle">true</item>
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">#B1B1B1</item>
+        <item name="colorPrimaryVariant">#B1B1B1</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -28,4 +28,5 @@
     <style name="Theme.Alcohol.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Alcohol.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

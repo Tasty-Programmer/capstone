@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_layout"
-    android:saveEnabled="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:saveEnabled="true"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -18,22 +17,37 @@
         android:background="@drawable/gradient">
         <!--    위배너의 뒤배경은 흰색으로 교체 할예정 입니다-->
 
-
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="25sp"
-            android:background="@drawable/logo"
-            android:foregroundGravity="right">
-
-
-        </ImageView>
-
         <!--    로고의 위치 선정이 필요    -->
 
+<!--        <ImageView-->
+<!--            android:id="@+id/MainLogo"-->
+<!--            android:layout_width="50sp"-->
+<!--            android:layout_height="50sp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:background="@drawable/logo"-->
+<!--            android:foregroundGravity="right"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
-    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:text="Alcohol Wiki"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:shadowRadius="7.0"
+            android:shadowDx="7.0"
+            android:shadowDy="7.0"
+            android:shadowColor="#A1000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:id="@+id/container"
@@ -50,5 +64,5 @@
         app:itemIconTint="#333333"
         app:itemTextColor="#434343"
         app:labelVisibilityMode="labeled"
-        app:menu="@menu/bottom_menu"/>
+        app:menu="@menu/bottom_menu" />
 </RelativeLayout>
