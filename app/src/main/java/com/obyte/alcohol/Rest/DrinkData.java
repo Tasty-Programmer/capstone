@@ -16,6 +16,14 @@ public class DrinkData {
     @Expose
     private String volume;
 
+    @SerializedName("주원료")
+    @Expose
+    private String ingredients;
+
+    @SerializedName("제조사")
+    @Expose
+    private String manufacturer;
+
     public String getName() {
         return name;
     }
@@ -27,4 +35,8 @@ public class DrinkData {
     public String getVolume() {
         return volume;
     }
+
+    public String getIngredients() {return ingredients;}
+
+    public String getManufacturer() {return manufacturer;}
 }

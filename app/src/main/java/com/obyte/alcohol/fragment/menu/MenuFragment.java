@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Parcelable;
@@ -39,7 +40,7 @@ public class MenuFragment extends Fragment {
 
     final static String BASE_URL = "https://api.odcloud.kr/api/";
     final static String SERVICE_KEY = "PiupwYl4E3qXUITudPuqSalNK8/yzD8jOUgFtMIZJkEB2CPsZaDBfae+UAU9MoNKBJLvaUxIlq5jY2WwzDmEeg==";
-    final static int GRID_SPAN_COUNT = 1;
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -48,9 +49,9 @@ public class MenuFragment extends Fragment {
 
         dataArrayList = new ArrayList<>();
         viewAdepter = new ViewAdepter(dataArrayList, getContext());
-
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), GRID_SPAN_COUNT);
-        rvLists.setLayoutManager(gridLayoutManager);
+        
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        rvLists.setLayoutManager(linearLayoutManager);
         rvLists.setAdapter(viewAdepter);
 
         serverConnect();
