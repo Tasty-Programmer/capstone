@@ -53,7 +53,13 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/header" />
+        android:layout_below="@id/header"
+        android:layout_above="@id/emtty"/>
+    <View
+        android:id="@+id/emtty"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_menu"
@@ -65,4 +71,6 @@
         app:itemTextColor="#434343"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_menu" />
+
+
 </RelativeLayout>
