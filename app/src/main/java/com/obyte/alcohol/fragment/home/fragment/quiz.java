@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.obyte.alcohol.R;
 
-public class naverdictionary extends Fragment {
+public class quiz extends Fragment {
     private ImageView fragment3;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

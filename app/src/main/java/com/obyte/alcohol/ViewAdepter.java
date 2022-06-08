@@ -37,14 +37,16 @@ public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder
     public void onBindViewHolder(@NonNull ListItemHolder holder, int position) {
         DrinkData modal = drinkDataArrayList.get(position);
 
-        holder.tvName.setText(modal.getName());
-        holder.tvLevel.setText("도수 : " + modal.getLevel());
-        holder.tvVolume.setText("규격 :" +modal.getVolume());
+        holder.Item_Name.setText(modal.getName());
+        holder.Item_Level.setText("도수 : " + modal.getLevel());
+        holder.Item_Volume.setText("규격 :" +modal.getVolume());
+        holder.Item_ingriedmont.setText("재료 : "+modal.getIngredients());
+        holder.Item_Maker.setText(modal.getManufacturer());
 
         String urlMin = "https://www.thesool.com/common/imageView.do?targetId=PR00000412&targetNm=PRODUCT";
         String urlMax = "https://www.thesool.com/common/imageView.do?targetId=PR00000434&targetNm=PRODUCT";
         String urltest = "https://thesool.com/common/imageView.do?targetId=PR00000706&targetNm=PRODUCT";
-        Glide.with(context).load(urltest).into(holder.ivImage);
+        Glide.with(context).load(urltest).into(holder.Item_Image);
     }
 
     @Override
@@ -53,15 +55,17 @@ public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder
     }
 
     protected class ListItemHolder extends RecyclerView.ViewHolder {
-        ImageView ivImage;
-        TextView tvName, tvLevel, tvVolume;
+        ImageView Item_Image;
+        TextView Item_Name, Item_Level, Item_Volume, Item_ingriedmont, Item_Maker;
 
         public ListItemHolder(@NonNull View view) {
             super(view);
-            ivImage = view.findViewById(R.id.ivImage);
-            tvName = view.findViewById(R.id.tvName);
-            tvLevel = view.findViewById(R.id.tvLevel);
-            tvVolume = view.findViewById(R.id.tvVolume);
+            Item_Image = view.findViewById(R.id.Item_Image);
+            Item_Name = view.findViewById(R.id.Item_Name);
+            Item_Level = view.findViewById(R.id.Item_Level);
+            Item_Volume = view.findViewById(R.id.Item_Volume);
+            Item_ingriedmont = view.findViewById(R.id.Item_ingriedmont);
+            Item_Maker = view.findViewById(R.id.Item_Maker);
         }
     }
 }
