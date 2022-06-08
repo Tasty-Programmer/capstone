@@ -1,60 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="start"
     android:layout_marginLeft="5sp"
     android:layout_marginTop="10sp"
+    android:layout_marginRight="5sp"
     android:elevation="8sp"
     app:cardCornerRadius="8sp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#9C27B0"
-        android:orientation="vertical"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/ivImage"
-            android:layout_width="175sp"
-            android:layout_height="150sp"
-            android:src="@mipmap/ic_main"/>
-
-        <TextView
-            android:id="@+id/tvName"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="5sp"
-            android:padding="3sp"
-            android:text="Drink Name"
-            android:textColor="@color/white"
-            android:maxWidth="300sp"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tvLevel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="5sp"
-            android:padding="3sp"
-            android:text="Drink Level"
-            android:textColor="@color/white"
-            android:maxWidth="300dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivImage"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:src="@mipmap/ic_main"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tvVolume"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="5sp"
-            android:padding="3sp"
-            android:text="Drink Volume"
-            android:textColor="@color/white"
-            android:maxWidth="300sp"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-    </LinearLayout>
+                android:layout_marginLeft="5sp"
+                android:maxWidth="300sp"
+                android:padding="3sp"
+                android:text="Drink Name"
+                app:layout_constraintLeft_toRightOf="@id/ivImage"
+                app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:maxWidth="300dp"
+                android:padding="3sp"
+                android:text="Drink Level"
+                app:layout_constraintLeft_toRightOf="@id/ivImage"
+                app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+            <TextView
+                android:id="@+id/tvVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:maxWidth="300sp"
+                android:padding="3sp"
+                android:text="Drink Volume"
+                app:layout_constraintLeft_toRightOf="@id/ivImage"
+                app:layout_constraintTop_toBottomOf="@id/tvLevel" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
