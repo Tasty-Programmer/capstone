@@ -10,10 +10,12 @@
 
     <ImageView
         android:id="@+id/home_fragment3"
-        android:layout_width="match_parent"
-        android:layout_height="300sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
         android:background="#FFFFFF"
         android:gravity="center"
         android:textColor="#000000"
+        android:adjustViewBounds="true"
         app:srcCompat="@drawable/home_mbti" />
 </LinearLayout>
