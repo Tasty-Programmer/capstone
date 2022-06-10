@@ -1,4 +1,4 @@
-package com.obyte.alcohol;
+package com.obyte.alcohol.fragment.menu;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.obyte.alcohol.R;
 import com.obyte.alcohol.Rest.DrinkData;
 
 import java.util.ArrayList;
@@ -43,10 +44,9 @@ public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder
         holder.Item_ingriedmont.setText("재료 : \n"+modal.getIngredients());
         holder.Item_Maker.setText(modal.getManufacturer());
 
-        String urlMin = "https://www.thesool.com/common/imageView.do?targetId=PR00000412&targetNm=PRODUCT";
-        String urlMax = "https://www.thesool.com/common/imageView.do?targetId=PR00000434&targetNm=PRODUCT";
         String urltest = "https://thesool.com/common/imageView.do?targetId=PR00000706&targetNm=PRODUCT";
         Glide.with(context).load(urltest).into(holder.Item_Image);
+        //Glide.with(context).load(modal.getImageLink()).into(holder.Item_Image);
     }
 
     @Override

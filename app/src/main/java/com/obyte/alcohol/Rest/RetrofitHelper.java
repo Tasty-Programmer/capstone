@@ -17,7 +17,8 @@ public class RetrofitHelper {
                 .build();
 
         ServerService serverService = retrofit.create(ServerService.class);
-        Call<PageData> call = serverService.getData(1, 100, SERVICE_KEY);
+        Call<PageData> call = serverService.getTestData(1, 100, SERVICE_KEY);
+        //Call<PageData> call = serverService.getData();
 
         PageData pageData = call.execute().body();
 

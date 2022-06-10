@@ -6,7 +6,10 @@ import retrofit2.http.Query;
 
 public interface ServerService {
     @GET("15048755/v1/uddi:fec53d3a-2bef-4494-b50e-f4e566f403e0")
-    Call<PageData> getData(@Query("page") int page,
+    Call<PageData> getTestData(@Query("page") int page,
                            @Query("perPage") int perPage,
                            @Query("serviceKey") String serviceKey);
+
+    @GET("api")
+    Call<PageData> getData();
 }

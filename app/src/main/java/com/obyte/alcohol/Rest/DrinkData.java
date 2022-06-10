@@ -24,6 +24,10 @@ public class DrinkData {
     @Expose
     private String manufacturer;
 
+    @SerializedName("링크")
+    @Expose
+    private String imageLink;
+
     public String getName() {
         return name;
     }
@@ -39,4 +43,6 @@ public class DrinkData {
     public String getIngredients() {return ingredients;}
 
     public String getManufacturer() {return manufacturer;}
+
+    public String getImageLink() {return imageLink;}
 }
