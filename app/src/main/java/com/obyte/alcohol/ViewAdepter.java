@@ -38,9 +38,9 @@ public class ViewAdepter extends RecyclerView.Adapter<ViewAdepter.ListItemHolder
         DrinkData modal = drinkDataArrayList.get(position);
 
         holder.Item_Name.setText(modal.getName());
-        holder.Item_Level.setText("도수 : " + modal.getLevel());
+        holder.Item_Level.setText("도수 : " + modal.getLevel()+"%");
         holder.Item_Volume.setText("규격 :" +modal.getVolume());
-        holder.Item_ingriedmont.setText("재료 : "+modal.getIngredients());
+        holder.Item_ingriedmont.setText("재료 : \n"+modal.getIngredients());
         holder.Item_Maker.setText(modal.getManufacturer());
 
         String urlMin = "https://www.thesool.com/common/imageView.do?targetId=PR00000412&targetNm=PRODUCT";
