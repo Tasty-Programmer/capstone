@@ -18,7 +18,7 @@ public class quiz extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_home_fram_naverdictionary, container, false);
+                R.layout.fragment_home_fram_quiz, container, false);
 
         init(rootView);
 

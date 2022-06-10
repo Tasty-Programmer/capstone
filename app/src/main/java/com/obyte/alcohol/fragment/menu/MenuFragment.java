@@ -17,11 +17,15 @@ import android.widget.Toast;
 import com.obyte.alcohol.R;
 import com.obyte.alcohol.Rest.DrinkData;
 import com.obyte.alcohol.Rest.PageData;
+import com.obyte.alcohol.Rest.RetrofitHelper;
 import com.obyte.alcohol.Rest.ServerService;
 import com.obyte.alcohol.ViewAdepter;
 
 import java.util.ArrayList;
 
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
+import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.schedulers.Schedulers;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,8 +43,6 @@ public class MenuFragment extends Fragment {
     ViewAdepter viewAdepter;
 
     final static String BASE_URL = "https://api.odcloud.kr/api/";
-    final static String SERVICE_KEY = "PiupwYl4E3qXUITudPuqSalNK8/yzD8jOUgFtMIZJkEB2CPsZaDBfae+UAU9MoNKBJLvaUxIlq5jY2WwzDmEeg==";
-
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -64,44 +66,17 @@ public class MenuFragment extends Fragment {
         rvLists = viewGroup.findViewById(R.id.rvLists);
     }
 
-    public void serverConnect(){
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        ServerService serverService = retrofit.create(ServerService.class);
-        Call<PageData> call = serverService.getData(1, 100, SERVICE_KEY);
-
-        call.enqueue(new Callback<PageData>() {
-            @Override
-            public void onResponse(Call<PageData> call, Response<PageData> response) {
-                if (response.isSuccessful()) {
-                    int beforeListSize = viewAdepter.getItemCount();
-                    ArrayList<DrinkData> responseDatas = response.body().getData();
-                    Log.i("size", beforeListSize + " ");
-
-                    dataArrayList.addAll(responseDatas);
-
-                    viewAdepter.notifyItemRangeInserted(viewAdepter.getItemCount(), responseDatas.size());
-                    Log.i("size", viewAdepter.getItemCount() + " ");
-
-                }else{
-                    String errorMessage = null;
-                    try{
-                        errorMessage =response.errorBody().string();
-                    }catch (Exception e){
-                        Toast.makeText(getActivity(), errorMessage ,Toast.LENGTH_LONG).show();
-                    }
-
-
-                }
-            }
-
-            @Override
-            public void onFailure(Call<PageData> call, Throwable t) {
-
-            }
-        });
+    private void serverConnect(){
+        Observable.just(BASE_URL)
+                .map(RetrofitHelper::connect)
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeOn(Schedulers.io())
+                .subscribe(data ->  {
+                    dataArrayList.addAll(data);
+                    viewAdepter.notifyItemRangeInserted(viewAdepter.getItemCount(), data.size());
+                }, throwable -> {
+                    Toast.makeText(getContext(), throwable.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getContext(), "서버 연결에 실패했습니다.", Toast.LENGTH_LONG).show();
+                });
     }
 }
