@@ -2,10 +2,13 @@ package com.obyte.alcohol.fragment.menu;
 
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +25,6 @@ import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 
 public class MenuFragment extends Fragment {
-
     public MenuFragment(){
 
     }
@@ -35,7 +37,6 @@ public class MenuFragment extends Fragment {
     // private final static String BASE_URL = "http://10.0.0.2:8080/";
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
         ViewGroup viewGroup =(ViewGroup) inflater.inflate(R.layout.fragment_menu,container,false);
         init(viewGroup);
 
@@ -49,8 +50,7 @@ public class MenuFragment extends Fragment {
 
     public void init(ViewGroup viewGroup) {
         rvLists = viewGroup.findViewById(R.id.rvLists);
-        dataArrayList = new ArrayList<>();
-        viewAdepter = new ViewAdepter(dataArrayList, getContext());
+        viewAdepter = ViewAdepter.getViewAdepter(getContext());
     }
 
     private void setLayoutManager(){
@@ -59,16 +59,19 @@ public class MenuFragment extends Fragment {
         rvLists.setAdapter(viewAdepter);
     }
 
+
     private void serverConnect(){
-        Observable.just(BASE_URL)
-                .map(RetrofitHelper::connect)
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribeOn(Schedulers.io())
-                .subscribe(data ->  {
-                    dataArrayList.addAll(data);
-                    viewAdepter.notifyItemRangeInserted(viewAdepter.getItemCount(), data.size());
-                }, throwable -> {
-                    Toast.makeText(getContext(), throwable.getLocalizedMessage(), Toast.LENGTH_LONG).show();
-                });
+        if(ViewAdepter.getAdepterList().isEmpty()){
+            Observable.just(BASE_URL)
+                    .map(RetrofitHelper::connect)
+                    .observeOn(AndroidSchedulers.mainThread())
+                    .subscribeOn(Schedulers.io())
+                    .subscribe(data ->  {
+                        ViewAdepter.getAdepterList().addAll(data);
+                        viewAdepter.notifyItemRangeInserted(viewAdepter.getItemCount(), data.size());
+                    }, throwable -> {
+                        Toast.makeText(getContext(), throwable.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                    });
+        }
     }
 }

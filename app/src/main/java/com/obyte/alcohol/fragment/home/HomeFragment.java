@@ -17,10 +17,14 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.obyte.alcohol.R;
 
+import org.reactivestreams.Subscriber;
+
 import java.util.concurrent.TimeUnit;
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers;
 import io.reactivex.rxjava3.core.Observable;
+import io.reactivex.rxjava3.disposables.Disposable;
+import io.reactivex.rxjava3.internal.subscribers.BlockingSubscriber;
 import me.relex.circleindicator.CircleIndicator3;
 
 public class HomeFragment extends Fragment {
@@ -83,14 +87,6 @@ public class HomeFragment extends Fragment {
                 mIndicator.animatePageSelected(position%num_page);
             }
         });
-
-        autoSlidingInterval();
-    }
-
-    private void autoSlidingInterval(){
-        Observable.interval(5L, TimeUnit.SECONDS)
-                .observeOn(AndroidSchedulers.from(Looper.getMainLooper()))
-                .subscribe(num -> mPager.setCurrentItem(mPager.getCurrentItem() + 1, true));
     }
 
     private void setEventListener(){
@@ -121,5 +117,23 @@ public class HomeFragment extends Fragment {
         });
     }
 
+    Disposable viewPagerSlider;
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        autoSlidingInterval();
+    }
+
+    private void autoSlidingInterval(){
+        viewPagerSlider = Observable.interval(7L, TimeUnit.SECONDS)
+                .observeOn(AndroidSchedulers.from(Looper.getMainLooper()))
+                .subscribe(num -> mPager.setCurrentItem(mPager.getCurrentItem() + 1, true));
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        viewPagerSlider.dispose();
+    }
 }

@@ -8,8 +8,8 @@ import com.obyte.alcohol.fragment.home.fragment.mbti;
 import com.obyte.alcohol.fragment.home.fragment.quiz;
 
 public class HomeAdapter extends FragmentStateAdapter {
-
     public int mCount;
+
     public HomeAdapter(HomeFragment fa, int count) {
         super(fa);
         mCount = count;
